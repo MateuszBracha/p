@@ -1,0 +1,132 @@
+:root {
+    --tlo-strony: #c3c3c3;
+    --font-color: #000;
+    --color-border: #ff0000;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html, body {
+    font-weight: 300;
+    font-size: 12px;
+    background: var(--tlo-strony);
+    color: var(--font-color);
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+      'info info info'
+      'navbar navbar navbar'
+      'slider slider slider'
+      'pomoc pomoc pomoc'
+      'info_stopka info_stopka1 info_stopka2'
+      'stopka stopka stopka';
+  }
+  .info {
+    grid-area: info;
+    border: 1px solid var(--color-border);
+    height: calc(100vh - 95vh);
+  }
+  .navbar {
+    grid-area: navbar;
+    border: 1px solid var(--color-border);
+    height: calc(100vh - 95vh);
+  }
+  .slider {
+    grid-area: slider;
+    border: 1px solid var(--color-border);
+    height: calc(100vh - 70vh);
+  }
+  .pomoc {
+    grid-area: pomoc;
+    border: 1px solid var(--color-border);
+    height: calc(100vh - 50vh);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+      'rek rek2 text text text text text text foto foto foto foto'
+      'rek rek2 foto2 foto2 foto2 foto2 text2 text2 text2 text2 text2 text2';
+  }
+  .rek {
+    grid-area: rek;
+    border: 1px solid var(--color-border);
+  /*   height: calc(100vh - 90vh); */
+  }
+  .rek2 {
+    grid-area: rek2;
+    border: 1px solid var(--color-border);
+  /*   height: calc(100vh - 90vh); */
+  }
+  .text {
+    grid-area: text;
+    border: 1px solid var(--color-border);
+  /*   height: calc(100vh - 90vh); */
+  }
+  .text2 {
+    grid-area: text2;
+    border: 1px solid var(--color-border);
+  /*   height: calc(100vh - 90vh); */
+  }
+  .foto {
+    grid-area: foto;
+    border: 1px solid var(--color-border);
+  /*   height: calc(100vh - 90vh); */
+  }
+  .foto2 {
+    grid-area: foto2;
+    border: 1px solid var(--color-border);
+  /*   height: calc(100vh - 90vh); */
+  }
+  .info_stopka {
+    grid-area: info_stopka;
+    border: 1px solid var(--color-border);
+    height: calc(100vh - 95vh);
+  }
+  .info_stopka1 {
+    grid-area: info_stopka1;
+    border: 1px solid var(--color-border);
+    height: calc(100vh - 95vh);
+  }
+  .info_stopka2 {
+    grid-area: info_stopka2;
+    border: 1px solid var(--color-border);
+    height: calc(100vh - 95vh);
+  }
+  .stopka {
+    grid-area: stopka;
+    border: 1px solid var(--color-border);
+    height: calc(100vh - 95vh);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
